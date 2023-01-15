@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #171717, #0a0a0a);
+    color: white;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 2;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+  }
+  
+  .logo-period {
+    font-size: 20px;
+    font-weight: 600;
+    color: #00ff00;
+  }
+
+  .logolink, .project-card:hover a{
+    color: #00ff00;
+    text-decoration: underline;
+  }
+
+  .project-card a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+  font-size: 18px;
+  color: #17e21e;
+  /* cursor: pointer; */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-section {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.left-half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-pic:hover {
+  width: 330px;
+  height: 330px;
+  cursor: pointer;
+}
+
+.right-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.name-period {
+  font-size: 40px;
+  font-weight: 600;
+  color: #00ff00;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.home-section .hometext:hover .name {
+  font-size: 36px;
+  
+}
+
+.hometext {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.typeit {
+  display: flex;
+  white-space: nowrap;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-decoration: none; /* remove the default underline */
+  transition: all 0.2s ease-in-out; /* add a transition for the animation */
+}
+
+.home-section .hometext:hover .typeit {
+  font-size: 45px;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 255, 0); 
+  text-decoration-style: solid; 
+  transition: all 0.2s ease-in-out;
+}
+
+.home-section .hometext:hover .name-period {
+  font-size: 45px;
+}
+
+
+.home-section .hometext:hover .title{
+  font-size: 28px;
+}
+
+.resume-section {
+  height: calc(100vh - 60px);
+}
+
+.resume-iframe {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  /* height: calc(100vh - 60px); */
+}
+
+.project-title{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.project-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  background-position: center;
+  background-size: cover;
+  position: relative;  
+  transition: all 0.4s ease-in-out;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+  filter: brightness(70%);
+}
+
+.project-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.project-card:hover .project-image {
+  width: 105%;
+  height: 105%;
+  filter: brightness(100%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.animated-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: transform 0.3s; 
+}
+
+.animated-button:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  align-items: center;
+  justify-content: center;
+}
+.contact-section h2 {
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-link {
+  font-size: 18px;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  font-size: 20px;
+  background: linear-gradient(to right, white, #00ff00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #999999;
+}
+
+.circle {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #039d03;  
+  z-index: -1;
+  /* background-color: #00ff00; */
+}

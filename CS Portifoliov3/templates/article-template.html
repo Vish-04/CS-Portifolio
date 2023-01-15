@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <title>VishReddy | Software Engineer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/article_style.css') }}">
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <a href="/" class="logolink"><div class="logo">VishReddy<div class="logo-period">.</div></div></a>
+      <a href="/projects" class="navlink">My Work</a>
+    </nav>
+      <!--Have all of the page displayed here-->
+    <div class="page-content">
+      <!--Article Header-->
+      <div class="article-header">
+        <h1>Multifunctional AI Hand Utility</h1>
+      </div>
+      
+      <!--Small article image-->
+      <!-- on hover make stuff pop up and say view demo-->
+      <img src="{{ url_for('static', filename='images/mfhc.png') }}" class="article-image"/>
+      <div class="view-links">
+        <a href="github.com/Vish-04/Multifunctional-AI-Hand-Utility">GitHub</a>
+        <a href="/multi-functional-ai/demo">Demo</a>
+      </div>
+      
+      <!--Summary of article-->
+      <div class="blurb">
+        <p> An interactive face where users can navigate through a desktop through hand gestures, including keyboard shortcuts, mouse, and volume control</p>
+      </div>
+
+      <!--Article Images and words-->
+      <div class="article-content">
+        <ul>
+          <li>
+            <h2> How it Works</h2>
+            <p>OpenCV is used to capture the image of the user. Next, this utility makes use of the mediapipe package made by Google to track the movement of fingerpoints, and then uses a combination of Pandas and Numpy to calculate what gestures are being made. This is then communicated with the computer through the PyAutoGUI packadge to functionalize hand-mouse control and keyboard shortcuts, while the volume control is communicated through a the PyCaw library</p>
+          </li>
+          <img class="section-image" src="#"/>
+          <li>
+            <h3>Mouse Control</h3>
+            <p> By touching your middle finger and thumb on your right hand in the view of the camera, you activate the AI Mouse Control mode. Here a box will be displayed on the screen, and a red dot on your pointer finger. The curser will now congruently track your pointer finger on your screen. Tap your pointer finger and your thumb to click on the screen, and hold up your middle finger next to your pointer finger to temporarily pause the mouse</p>
+          </li>
+          <img class="section-image" src="#"/>
+          </li>
+            <h3>Volume Control</h3>
+            <p> By touching your ring finger and thumb on your right hand in the view of the camera, you activate the AI Volume Control mode. A green line on the screen drawn between your thumb and pointer finger will allow you to control the volume. The further you stretch your thumb and pointer finger, the longer the line gets, and the louder your system gets, and vice versa. Lift your middle finger to temporarily pause the volume control</p>
+          </li>
+          <img class="section-image" src="#"/>
+          <li>
+          <h3>Keyboard ShortCuts</h3>
+            <p> Making a fist will activate the AI Keyboard Short-Cut Control mode. Here you can make a combination of gestures by lifting up your thumb, first finger, and middle finger, with all permutations mapped to a different shortcut. Try it out! The chosen shortcut will be on the screen and can allow you to switch between tabs and windows quickly.</p>
+          </li>
+        </ul>
+      <!--Add as many as neeeded--> 
+      </div>
+    </div>
+    
+
+    <footer class="footer">Copyright 2023 - Vishwa Reddy Akkati</footer>
+    <div class="circle"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>  
+    
+  </body>
+</html>

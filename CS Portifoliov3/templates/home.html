@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <title>VishReddy | Software Engineer</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_style.css') }}">
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <a href="#home" class="logolink"><div class="logo">VishReddy<div class="logo-period">.</div></div></a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+    <div class="container">
+      <section id="home" class="home-section">
+        <div class="left-half">
+          <img src="{{ url_for('static', filename='images/Vish.jpg') }}" alt="Profile Picture" class="profile-pic" />
+        </div>
+        <div class="right-half">
+          <div class="hometext">
+            <div class="name"><div class="typeit">Vishwa Reddy Akkati<div class="name-period">.</div></div></div>
+            <div class="title"> Front-End | Software Engineer | Machine Learning </div>
+          </div>
+        </div>
+      </section>
+      <section id="resume" class="resume-section">
+        <iframe src="https://docs.google.com/document/d/1_ERkbs78KongyviYTj6yk0Pzn0iXQrF4/edit?usp=sharing&ouid=114252014978841963041&rtpof=true&sd=true" frameborder="0" class="resume-iframe"></iframe>
+      </section>
+      <section id="projects" class="projects-section">
+          <h2 class="project-title"> Projects </h2>
+          <div class="project-cards">
+          <div class="project-card">
+            <a href="/multi-functional-ai"><img src="{{ url_for('static', filename='images/mfhc.png') }}" alt="Project 1" class="project-image" />
+            <div class="project-text">Multifunctional AI Hand Utility</div></a>
+          </div>
+          <div class="project-card">
+            <a href="/gsg"><img src="{{ url_for('static', filename='images/gsg.png') }}" alt="Project 2" class="project-image" />
+              <div class="project-text">Tile Flip</div></a>
+          </div>
+          <div class="project-card">
+            <a href="/blt"><img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Project 3" class="project-image" />
+            <div class="project-text">Blair Loma Tournament Website</div></a>
+          </div>
+        </div>
+        <button id="projects-button" class="animated-button">View More Projects</button>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <!--ADD A FORM HERE!!-->
+        <div class="contact-links">
+          <a href="mailto:vakkati@ucdavis.edu" class="contact-link">Email</a>
+          <a href="https://www.linkedin.com/in/vishwa-reddy-akkati-a0058b191/" class="contact-link">LinkedIn</a>
+          <a href="https://github.com/Vish-04" class="contact-link">GitHub</a>
+          <a href="https://discordapp.com/users/Vish#8148" class="contact-link">Discord</a>
+          <a href="https://www.instagram.com/vishfish0416/" class="contact-link">Instagram</a>
+          <a href="https://lichess.org/@/VishFish0416" class="contact-link">Lichess</a>
+          
+        </div>
+      </section>
+    </div>
+    
+    <footer class="footer">Copyright 2023 - Vishwa Reddy Akkati</footer>
+    <div class="circle"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>  
+    
+  </body>
+</html>

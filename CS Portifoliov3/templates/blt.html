@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VishReddy | Blair Loma Tournament Website</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/article_style.css') }}">
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <a href="/" class="logolink"><div class="logo">VishReddy<div class="logo-period">.</div></div></a>
+      <a href="/projects" class="navlink">My Work</a>
+    </nav>
+      <!--Have all of the page displayed here-->
+    <div class="page-content">
+      <!--Article Header-->
+      <div class="article-header">
+        <h1>Blair Loma Tournament Website</h1>
+      </div>
+      
+      <!--Small article image-->
+      <!-- on hover make stuff pop up and say view demo-->
+      <img src="{{ url_for('static', filename='images/logo2.png') }}" class="article-image"/>
+      <div class="view-links">
+        <a href="github.com/Vish-04/BLT-Website">GitHub</a>
+      </div>
+      
+      <!--Summary of article-->
+      <div class="blurb">
+        <p> A single-page website created as a central hub for all things related to the Blair Loma Science Bowl tournament. Here, you can find important information about the event, and stay up to date on all the latest news and announcements.</p>
+      </div>
+
+      <!--Article Images and words-->
+      <div class="article-content">
+        <ul>
+          <li>
+            <h2> Page Layouts</h2>
+            <p>Here is a complete layout of the website</p>
+          </li>
+          <img class="section-image" src="{{ url_for('static', filename='images/blt_home.png') }}"/>
+          <img class="section-image" src="{{ url_for('static', filename='images/blt_compete.png') }}"/>
+          <img class="section-image" src="{{ url_for('static', filename='images/blt_staff.png') }}"/>
+          <img class="section-image" src="{{ url_for('static', filename='images/blt_team.png') }}"/>
+          <img class="section-image" src="{{ url_for('static', filename='images/blt_sponsors.png') }}"/>
+          <img class="section-image" src="{{ url_for('static', filename='images/blt_contact.png') }}"/>
+        </ul>
+      <!--Add as many as neeeded--> 
+      </div>
+    </div>
+    
+
+    <footer class="footer">Copyright 2023 - Vishwa Reddy Akkati</footer>
+    <div class="circle"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>  
+    
+  </body>
+</html>

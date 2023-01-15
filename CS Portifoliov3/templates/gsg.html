@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <title>VishReddy | Tile Flip</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/article_style.css') }}">
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <a href="/" class="logolink"><div class="logo">VishReddy<div class="logo-period">.</div></div></a>
+      <a href="/projects" class="navlink">My Work</a>
+    </nav>
+      <!--Have all of the page displayed here-->
+    <div class="page-content">
+      <!--Article Header-->
+      <div class="article-header">
+        <h1>Tile Flip</h1>
+      </div>
+      
+      <!--Small article image-->
+      <!-- on hover make stuff pop up and say view demo-->
+      <img src="{{ url_for('static', filename='images/gsg.png') }}" class="article-image"/>
+      <div class="view-links">
+        <a href="github.com/Vish-04/Tile-Flip">GitHub</a>
+        <a href="/gsg/demo">Demo</a>
+      </div>
+      
+      <!--Summary of article-->
+      <div class="blurb">
+        <p> A fun-to-play puzzle app compatible on iOS, Andriod, Linux, MacOS, and Windows made using Kivy</p>
+      </div>
+
+      <!--Article Images and words-->
+      <div class="article-content">
+        <ul>
+          <li>
+            <h2>How to Play</h2>
+            <p>A randomly generated 3x3 grid of blue/green tiles are created. Click on a tile to flip its color and the color of adjacent tiles from blue to green or vice versa.</p>
+          </li>
+          <img class="section-image" src="{{ url_for('static', filename='images/gsg_instructions.png') }}"/>
+          <li>
+            <p> The goal of the game is to flip all of the tiles to green</p>
+          </li>
+          <img class="section-image" src="{{ url_for('static', filename='images/gsg_victory.png') }}"/>
+          </li>
+            <p> The difficulty is variable and a constraint on the number of clicks can be set, ranging from BABY mode to INSANE difficulty</p>
+          </li>
+          <img class="section-image" src="{{ url_for('static', filename='images/gsg_difficulty.png') }}"/>
+        </ul>
+      <!--Add as many as neeeded--> 
+      </div>
+    </div>
+    
+
+    <footer class="footer">Copyright 2023 - Vishwa Reddy Akkati</footer>
+    <div class="circle"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>  
+    
+  </body>
+</html>

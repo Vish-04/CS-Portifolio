@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VishReddy | Presenation Notes Parser</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/article_style.css') }}">
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <a href="/" class="logolink"><div class="logo">VishReddy<div class="logo-period">.</div></div></a>
+      <a href="/projects" class="navlink">My Work</a>
+    </nav>
+      <!--Have all of the page displayed here-->
+    <div class="page-content">
+      <!--Article Header-->
+      <div class="article-header">
+        <h1>Presentation Notes Parser</h1>
+      </div>
+      
+      <!--Small article image-->
+      <!-- on hover make stuff pop up and say view demo-->
+      <img src="{{ url_for('static', filename='images/sp.png') }}" class="article-image"/>
+      <div class="view-links">
+        <a href="github.com/Vish-04/Presenation-Notes-Parser">GitHub</a>
+      </div>
+      
+      <!--Summary of article-->
+      <div class="blurb">
+        <p>A new, innovative app designed to simplify presenting with a script. Simpli-Prez is compatible on iOS, Andriod, Windows, MacOS, Linux.</p>
+      </div>
+
+      <!--Article Images and words-->
+       <div class="article-content">
+        <ul>
+          <li>
+            <h2>Introduction</h2>
+            <p>Ever find yourself in a presentation, lost in the middle of your script, trying to figure out where you left off? Introducing the Presentation Notes Parser. Presentation Notes Parser takes in an input of a script and bolds each sentence/bullet point line by line, making it easy to read a script. It presents the script in readable blocks, allowing for scripts of ANY length to be processed</p>
+          </li>
+          <li>
+            <h2>Usage</h2>
+            <p>The Presentation Notes Parser has two mode, the "edit" mode and the "present" mode. In the edit mode, your entire script can be pasted and edited as per your wishes. You can include any symbol or character you want, and will be recognized by the Natural Language ToolKit</p>
+          </li>
+          <img class="section-image" src="{{ url_for('static', filename='images/pnp_edit.png') }}"/>
+          <li>
+            <p> When finished touching up the script, click on the button on the top right to enter "present" mode. Here you script will be displayed. There will be one sentence, line, or bullet point highlighted at a time, making it easy to keep track of the current point and not lose your place. If your script exceeds the length of one application page, the script will be presented in readable blocks so a script of any length can be processed</p>
+          </li>
+          <img class="section-image" src="{{ url_for('static', filename='images/pnp_present.png') }}"/>
+        </ul>
+      <!--Add as many as neeeded--> 
+      </div>
+    </div>
+    
+
+    <footer class="footer">Copyright 2023 - Vishwa Reddy Akkati</footer>
+    <div class="circle"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>  
+    
+  </body>
+</html>
